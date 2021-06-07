@@ -1,15 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="container">
-    <h2>Title</h2>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="header-menu">
+            <li class="header-menu__item header-menu__logo">
+              <a href="">
+                <img src="/img/header-logo.png" alt="logo" />
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a href="">Продукция</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="">Коллекция</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="">Блог и новости</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="">О компании</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="">Контакты</a>
+            </li>
+            <li class="header-menu__item header-menu__contact">
+              <a href="tel:+78007895715">8 (800) 789-57-15</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="slider">
+        <div class="slide">
+          <div class="container">
+            <h1>Идеальная одежда для поездок за город</h1>
+            <p>
+              Индивидуальные коллекции, уникальный дизайн, ручной пошив,
+              качественные материалы
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="collections">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Коллекции</a></li>
+          <li><a href="">Одежда для поездок, путешествий и походов</a></li>
+        </ul>
+        <h2 class="title">Лучшая одежда для поездок, путешествий и походов</h2>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="wrapper">
+          <section class="contact-form">
+            <h2>Закажите индивидуальную коллекцию</h2>
+            <form>
+              <div class="wrapper">
+                <input type="text" placeholder="ФИО" required>
+                <input type="text" placeholder="Телефон" required>
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Компания">
+                <textarea placeholder="Сообщение"></textarea>
+              </div>
+              <div class="wrapper">
+                <p>Нажимая кнопку «Отправить», даю согласие на обработку персональных данных, указанных <a href="">Политики конфиденциальности</a></p>
+                <button>Отправить</button>
+              </div>
+            </form>
+          </section>
+          <div class="contact-contacts">
+            <p>Остались вопросы? Звоните!</p>
+            <a href="tel:+78007894856">8 (800) 789 48 56</a>
+            <a href="email:mail@mail.com">mail@mail.com</a>
+            <div class="contact-contacts__photo">
+              <img src="" alt="">
+            </div>
+            <p>Иван Акипаев</p>
+            <p>менеджер отдела продаж</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="footer__col-contacts">
+            <div class="footer__logo">
+              <img src="/img/header-logo.png" alt="logo" />
+            </div>
+            <div class="footer__address">
+              <p>ООО «Собергер». Россия, г. Москва, ул. Арбат, 1а, 119019</p>
+            </div>
+            <div class="footer__contacts">
+              <p><a href="tel:+78007895615">8 (800) 789-56-15</a></p>
+              <p><a href="email:email@email.com">email@email.com</a></p>
+            </div>
+          </div>
+          <div class="footer__col-menu">
+            <div class="footer__block-social"></div>
+            <nav class="footer__block-menu">
+              <ul class="footer-menu">
+                <li class="footer-menu__item footer-menu__item_title">
+                  Компания
+                </li>
+                <li class="footer-menu__item"><a href="">Блог и новости</a></li>
+                <li class="footer-menu__item"><a href="">О компании</a></li>
+                <li class="footer-menu__item"><a href="">Контакты</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <li class="footer-menu__item footer-menu__item_title">
+                  Продукты и коллекции
+                </li>
+                <li class="footer-menu__item"><a href="">Коллекции</a></li>
+                <li class="footer-menu__item"><a href="">Проекты</a></li>
+                <li class="footer-menu__item footer-menu__item_catalog">
+                  <a href="">Скачать каталог</a>
+                </li>
+              </ul>
+              <ul class="footer-menu">
+                <li class="footer-menu__item footer-menu__item_title">Общее</li>
+                <li class="footer-menu__item">
+                  <a href="">Политика конфиденциальности</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="">Пользовательское соглашение</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="">Сроки и условия</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="copyright">© 2021, «Собергер». Все права защищены.</div>
+          <div class="development">
+            <p>Разработка - <a href="">Picom</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

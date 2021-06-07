@@ -1,6 +1,57 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #363131; }
+
 body {
   margin: 0;
   padding: 0; }
+
+.container {
+  width: 1500px;
+  margin: 0 auto; }
+
+section .title {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 860px; }
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  background-color: #fff; }
+  .header-menu__item a {
+    color: #363131;
+    text-decoration: none; }
+  .header-menu__logo {
+    margin-right: auto; }
+  .header-menu__contact {
+    margin-left: auto; }
+
+.header .slider {
+  width: 100%;
+  height: 634px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("//unsplash.it/1920/634") center/cover no-repeat; }
+
+.collections {
+  padding-top: 40px;
+  padding-bottom: 47px; }
+
+.contact-us {
+  padding-top: 73px;
+  padding-bottom: 83px;
+  background-color: #FF5F01; }
+
+.footer {
+  padding-top: 117px;
+  padding-bottom: 71px; }

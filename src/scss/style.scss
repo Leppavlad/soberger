@@ -1,8 +1,33 @@
+@import "assets/mixins";
+@import "assets/variables";
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: $text-black;
+}
 body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+section .title {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 860px;
+}
+
+@import "components/header";
+@import "components/header-slider";
+@import "components/collections";
+@import "components/contact-us";
+@import "components/footer";
