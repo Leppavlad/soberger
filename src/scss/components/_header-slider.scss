@@ -1,9 +1,78 @@
 .header {
   .slider {
+    position: relative;
     width: 100%;
     height: 634px;
-    padding-top: 150px;
+    overflow: hidden;
+
+    &__title {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    &__subtitle {
+      --line-width: 3px;
+      --line-margin: 20px;
+      position: relative;
+      margin: 0;
+      margin-top: 50px;
+      margin-left: var(--line-margin);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      max-width: 500px;
+
+      &:before {
+        position: absolute;
+        left: calc(var(--line-margin) * -1 + var(--line-width));
+        content: "";
+        height: 100%;
+        width: var(--line-width);
+        background-color: $main-orange;
+      }
+    }
+
+    &__controllers .wrapper {
+      position: absolute;
+      bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      height: 64px;
+      padding: 0 20px;
+      max-width: 1540px;
+      width: 100%;
+    }
+
+    &__chart {
+      display: inline-block;
+
+      svg {
+        pointer-events: none;
+      }
+    }
+
+    &__chevrons {
+      display: flex;
+
+      button {
+        margin: 0 2px;
+        width: 64px;
+      }
+    }
+  }
+
+  .slide {
+    display: none;
+    padding-top: 160px;
     padding-bottom: 100px;
-    background: url("//unsplash.it/1920/634") center/cover no-repeat;
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.active {
+      display: block;
+    }
   }
 }

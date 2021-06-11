@@ -10,13 +10,13 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav>
-          <ul class="header-menu">
-            <li class="header-menu__item header-menu__logo">
-              <a href="">
-                <img src="/img/header-logo.png" alt="logo" />
-              </a>
-            </li>
+        <nav class="header-menu">
+          <div class="header-menu__logo">
+            <a href="">
+              <img src="/img/header-logo.png" alt="logo" />
+            </a>
+          </div>
+          <ul class="header-menu__list">
             <li class="header-menu__item">
               <a href="">Продукция</a>
             </li>
@@ -32,20 +32,81 @@
             <li class="header-menu__item">
               <a href="">Контакты</a>
             </li>
-            <li class="header-menu__item header-menu__contact">
-              <a href="tel:+78007895715">8 (800) 789-57-15</a>
-            </li>
           </ul>
+          <div class="header-menu__contact">
+            <a href="tel:+78007895715">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.353 2.5C18.054 2.911 20.978 5.831 21.393 9.532" stroke="#363131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.353 6.04297C16.124 6.38697 17.508 7.77197 17.853 9.54297" stroke="#363131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0315 12.4724C15.0205 16.4604 15.9254 11.8467 18.4653 14.3848C20.9138 16.8328 22.3222 17.3232 19.2188 20.4247C18.8302 20.737 16.3613 24.4943 7.68447 15.8197C-0.993406 7.144 2.76157 4.67244 3.07394 4.28395C6.18377 1.17385 6.66682 2.58938 9.11539 5.03733C11.6541 7.5765 7.04254 8.48441 11.0315 12.4724Z" stroke="#363131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              8 (800) 789-57-15
+            </a>
+          </div>
         </nav>
       </div>
       <section class="slider">
-        <div class="slide">
+        <div
+          class="slide"
+          style="background-image: url('img/slider/slider_01.jpg')"
+        >
           <div class="container">
-            <h1>Идеальная одежда для поездок за город</h1>
-            <p>
-              Индивидуальные коллекции, уникальный дизайн, ручной пошив,
-              качественные материалы
-            </p>
+            <div class="slider__content">
+              <h1 class="slider__title">
+                Идеальная одежда для поездок за город
+              </h1>
+              <h2 class="slider__subtitle">
+                Индивидуальные коллекции, уникальный дизайн, ручной пошив,
+                качественные материалы
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="background-image: url('//unsplash.it/1920/634')"
+        >
+          <div class="container">
+            <div class="slider__content">
+              <h1 class="slider__title">
+                Рандомная картинка с интернета
+              </h1>
+              <h2 class="slider__subtitle">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi assumenda cumque provident optio voluptas accusamus quis ab consequatur ullam incidunt.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="background-image: url('//unsplash.it/1920/635')"
+        >
+          <div class="container">
+            <div class="slider__content">
+              <h1 class="slider__title">
+                Еще одна рандомная картинка!
+              </h1>
+              <h2 class="slider__subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa doloribus animi natus qui exercitationem repellendus dicta quae culpa nobis molestiae quibusdam totam esse porro corporis distinctio odit veniam, temporibus nulla soluta sunt aliquam tenetur, minus velit. Corporis, aliquid fugiat.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="slider__controllers">
+          <div class="container">
+            <div class="wrapper">
+              <div class="slider__charts">
+              </div>
+              <div class="slider__chevrons">
+                <button class="btn btn_square">
+                  <img src="/img/icons/chevron-left.svg" alt="" />
+                </button>
+                <button class="btn btn_square">
+                  <img src="/img/icons/chevron-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -53,42 +114,148 @@
     <section class="collections">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="">Главная</a></li>
-          <li><a href="">Коллекции</a></li>
-          <li><a href="">Одежда для поездок, путешествий и походов</a></li>
+          <li class="breadcrumbs__item"><a href="">Главная</a> /</li>
+          <li class="breadcrumbs__item"><a href="">Коллекции</a> /</li>
+          <li class="breadcrumbs__item">
+            <a href="">Одежда для поездок, путешествий и походов</a>
+          </li>
         </ul>
-        <h2 class="title">Лучшая одежда для поездок, путешествий и походов</h2>
+        <h2 class="title">
+          Лучшая одежда для поездок, путешествий и походов
+        </h2>
+        <p class="paragraph">
+          Outfit (аутфит) и существует для того, чтобы мода стала ближе,
+          доступнее и понятнее. Реплики и копии моделей от знаменитых
+          дизайнеров, а так же вещи с модных показов, можно найти практически
+          в любом модном магазине, а вот составить комплект из них сможет
+          далеко не каждый. Некоторых не плохо выручают фото, выставленные в
+          сети, где кто-то более смелый, грамотно сочетая предметы гардероба
+          создаёт замечательный и близкий вашему духу образ.
+          <br />Источник: https://www.relook.ru/vocabulary/view/outfit.html
+        </p>
+        <section class="collections__popular">
+          <header class="content__header">
+            <h2 class="title">Популярные вещи на лето</h2>
+            <button class="btn btn_flat btn_chevrone">
+              Каталог
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.75 7.72571L0.75 7.72571" stroke="#FF5F01" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.7002 1.70131L15.7502 7.72531L9.7002 13.7503" stroke="#FF5F01" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+          </header>
+          <div class="content">
+            <div class="popular__item">
+              <img src="/img/popular/image 2.jpg" alt="">
+            </div>
+            <div class="popular__item">
+              <img src="/img/popular/image 3.jpg" alt="">
+            </div>
+            <div class="popular__item">
+              <img src="/img/popular/image 4.jpg" alt="">
+            </div>
+            <div class="popular__item">
+              <img src="/img/popular/image 5.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="collections__season">
+          <header class="content__header">
+            <h2 class="title">Летние коллекции</h2>
+            <button class="btn btn_flat btn_chevrone">
+              Все коллекции
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.75 7.72571L0.75 7.72571" stroke="#FF5F01" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.7002 1.70131L15.7502 7.72531L9.7002 13.7503" stroke="#FF5F01" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+          </header>
+          <div class="content">
+            <div class="content__description">
+              <h3 class="subtitle">Для прогулки по лесу</h3>
+              <p class="text">
+                Когда есть спрос – всегда появятся и предложения. У многих
+                людей, желающих выглядеть и одеваться модно и стильно, иногда
+                просто нет времени на качественный шопинг и тем более на модный
+                показ. Кто-то вообще ещё не определился со своим стилем или не
+                уверен в собственном вкусе. Бывает, что приобретаешь просто
+                замечательную вещь, которая и сидит отлично и чувствуешь себя в
+                ней комфортно, а вот одеть её не с чем.
+              </p>
+              <div class="content__controllers">
+                <a class="btn btn_square" href="">
+                  <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.72678 15.7589C10.058 15.4667 10.0881 15.0095 9.8171 14.6873L9.72678 14.595L2.25176 8L9.72678 1.40503C10.058 1.11283 10.0881 0.655583 9.8171 0.333375L9.72678 0.241064C9.3956 -0.0511349 8.87736 -0.0776984 8.51217 0.161374L8.40755 0.241064L0.273221 7.41802C-0.0579567 7.71022 -0.0880642 8.16746 0.182899 8.48967L0.273221 8.58198L8.40755 15.7589C8.77184 16.0804 9.36248 16.0804 9.72678 15.7589Z" fill="white"/>
+                    </svg>
+                    
+                </a>
+                <a class="btn btn_square"  href="">
+                  <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.273221 15.7589C-0.057956 15.4667 -0.0880631 15.0095 0.1829 14.6873L0.273221 14.595L7.74824 8L0.273221 1.40503C-0.057956 1.11283 -0.0880631 0.655583 0.1829 0.333375L0.273221 0.241064C0.604399 -0.0511349 1.12264 -0.0776984 1.48783 0.161374L1.59245 0.241064L9.72678 7.41802C10.058 7.71022 10.0881 8.16746 9.8171 8.48967L9.72678 8.58198L1.59245 15.7589C1.22816 16.0804 0.637516 16.0804 0.273221 15.7589Z" fill="white"/>
+                    </svg>                    
+                </a>
+              </div>
+            </div>
+            <div class="content__img">
+              <img src="/img/collections/image 6.jpg" alt="">
+            </div>
+          </div>
+        </section>
       </div>
     </section>
+
     <section class="contact-us">
       <div class="container">
         <div class="wrapper">
           <section class="contact-form">
-            <h2>Закажите индивидуальную коллекцию</h2>
+            <h2 class="contact-form__title">Закажите индивидуальную коллекцию</h2>
             <form>
               <div class="wrapper">
-                <input type="text" placeholder="ФИО" required>
-                <input type="text" placeholder="Телефон" required>
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Компания">
+                <div class="required">
+                  <input type="text" id="contact-form-name" required />
+                  <label for="contact-form-name">
+                    ФИО<span>*</span>
+                  </label>
+                </div>
+                <div class="required">
+                  <input type="text" id="contact-form-phone" required />
+                  <label for="contact-form-phone">
+                    Телефон<span>*</span>
+                  </label>
+                </div>
+                <input type="text" placeholder="E-mail" />
+                <input type="text" placeholder="Компания" />
                 <textarea placeholder="Сообщение"></textarea>
               </div>
               <div class="wrapper">
-                <p>Нажимая кнопку «Отправить», даю согласие на обработку персональных данных, указанных <a href="">Политики конфиденциальности</a></p>
-                <button>Отправить</button>
+                <p class="agreement">
+                  Нажимая кнопку «Отправить», даю согласие на обработку
+                  персональных данных, указанных
+                  <a class="agreement__link" href=""
+                    >Политики конфиденциальности</a
+                  >
+                </p>
+                <button class="btn btn_square">Отправить</button>
               </div>
             </form>
           </section>
-          <div class="contact-contacts">
-            <p>Остались вопросы? Звоните!</p>
-            <a href="tel:+78007894856">8 (800) 789 48 56</a>
-            <a href="email:mail@mail.com">mail@mail.com</a>
+          <section class="contact-contacts">
+            <h3 class="contact-contacts__subtitle">
+              Остались вопросы? Звоните!
+            </h3>
+            <a class="contact-contacts__phone" href="tel:+78007894856"
+              >8 (800) 789 48 56</a
+            >
+            <a class="contact-contacts__email" href="email:mail@mail.com"
+              >mail@mail.com</a
+            >
             <div class="contact-contacts__photo">
-              <img src="" alt="">
+              <img src="/img/manager-avatar.png" alt="" />
             </div>
-            <p>Иван Акипаев</p>
-            <p>менеджер отдела продаж</p>
-          </div>
+            <p class="contact-contacts__name">Иван Акипаев</p>
+            <p class="contact-contacts__position">менеджер отдела продаж</p>
+          </section>
         </div>
       </div>
     </section>
@@ -100,58 +267,165 @@
               <img src="/img/header-logo.png" alt="logo" />
             </div>
             <div class="footer__address">
-              <p>ООО «Собергер». Россия, г. Москва, ул. Арбат, 1а, 119019</p>
+              ООО «Собергер». <br />Россия, г. Москва, ул. Арбат, 1а, 119019
             </div>
-            <div class="footer__contacts">
-              <p><a href="tel:+78007895615">8 (800) 789-56-15</a></p>
-              <p><a href="email:email@email.com">email@email.com</a></p>
-            </div>
+            <ul class="footer__contacts">
+              <li>
+                <img src="/img/icons/phone.svg" alt="" />
+                <a class="link phone" href="tel:+78007895615">
+                  8 (800) 789-56-15
+                </a>
+              </li>
+              <li>
+                <img src="/img/icons/email.svg" alt="" />
+                <a class="link email" href="email:email@email.com">
+                  email@email.com
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="footer__col-menu">
-            <div class="footer__block-social"></div>
-            <nav class="footer__block-menu">
-              <ul class="footer-menu">
-                <li class="footer-menu__item footer-menu__item_title">
-                  Компания
-                </li>
-                <li class="footer-menu__item"><a href="">Блог и новости</a></li>
-                <li class="footer-menu__item"><a href="">О компании</a></li>
-                <li class="footer-menu__item"><a href="">Контакты</a></li>
-              </ul>
-              <ul class="footer-menu">
-                <li class="footer-menu__item footer-menu__item_title">
-                  Продукты и коллекции
-                </li>
-                <li class="footer-menu__item"><a href="">Коллекции</a></li>
-                <li class="footer-menu__item"><a href="">Проекты</a></li>
-                <li class="footer-menu__item footer-menu__item_catalog">
-                  <a href="">Скачать каталог</a>
-                </li>
-              </ul>
-              <ul class="footer-menu">
-                <li class="footer-menu__item footer-menu__item_title">Общее</li>
-                <li class="footer-menu__item">
-                  <a href="">Политика конфиденциальности</a>
-                </li>
-                <li class="footer-menu__item">
-                  <a href="">Пользовательское соглашение</a>
-                </li>
-                <li class="footer-menu__item">
-                  <a href="">Сроки и условия</a>
-                </li>
-              </ul>
-            </nav>
+          <nav class="footer__col-menu">
+            <ul class="footer-menu">
+              <li class="footer-menu__item footer-menu__item_title">
+                Компания
+              </li>
+              <li class="footer-menu__item"><a href="">Блог и новости</a></li>
+              <li class="footer-menu__item"><a href="">О компании</a></li>
+              <li class="footer-menu__item"><a href="">Контакты</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item footer-menu__item_title">
+                Продукты и коллекции
+              </li>
+              <li class="footer-menu__item"><a href="">Коллекции</a></li>
+              <li class="footer-menu__item"><a href="">Проекты</a></li>
+              <li class="footer-menu__item footer-menu__item_catalog">
+                <img src="/img/icons/save.svg" alt="" />
+                <a href="">Скачать каталог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__col-public">
+            <ul class="footer__block-social">
+              <li class="item">
+                <a class="link" href="">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="20" cy="20" r="20" fill="#7E8385" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.7218 26.9451H21.2758C21.2758 26.9451 21.7454 26.8999 21.9856 26.6739C22.2068 26.4658 22.1987 26.0756 22.1987 26.0756C22.1987 26.0756 22.1688 24.2486 23.1365 23.9786C24.0906 23.7134 25.3162 25.745 26.6137 26.5264C27.5963 27.1176 28.3414 26.9879 28.3414 26.9879L31.8131 26.9451C31.8131 26.9451 33.629 26.8464 32.7686 25.5951C32.698 25.4928 32.2664 24.6697 30.1872 22.9771C28.0102 21.206 28.302 21.4927 30.9241 18.4299C32.5216 16.5648 33.1594 15.4253 32.9599 14.9376C32.7699 14.4726 31.5946 14.5951 31.5946 14.5951L27.6858 14.6165C27.6858 14.6165 27.3954 14.582 27.181 14.695C26.9706 14.8056 26.8362 15.0625 26.8362 15.0625C26.8362 15.0625 26.2174 16.5065 25.3922 17.734C23.6509 20.3246 22.9546 20.4614 22.671 20.3009C22.0087 19.9262 22.1743 18.795 22.1743 17.9909C22.1743 15.48 22.6086 14.4333 21.3287 14.1621C20.9039 14.0717 20.5904 14.0134 19.5033 14.0027C18.1081 13.9908 16.9273 14.0063 16.2596 14.2941C15.8144 14.4844 15.471 14.9103 15.6814 14.9352C15.9393 14.965 16.5242 15.0732 16.835 15.4431C17.2354 15.9213 17.2218 16.993 17.2218 16.993C17.2218 16.993 17.4525 19.9488 16.6844 20.3151C16.1578 20.5673 15.4344 20.0535 13.8831 17.7019C13.0878 16.4982 12.4879 15.1672 12.4879 15.1672C12.4879 15.1672 12.3725 14.9186 12.1663 14.7854C11.9152 14.6236 11.5664 14.5725 11.5664 14.5725L7.84764 14.5963C7.84764 14.5963 7.28983 14.6093 7.08489 14.8222C6.90302 15.0114 7.06996 15.4027 7.06996 15.4027C7.06996 15.4027 9.97844 21.3666 13.271 24.3712C16.2921 27.1259 19.7218 26.9451 19.7218 26.9451Z"
+                      fill="#F2F2F2"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="20" cy="20" r="20" fill="#7E8385" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.4333 12.9578C24.8028 12.8331 23.9513 12.74 23.4158 12.74C21.9657 12.74 21.8715 13.3633 21.8715 14.3607V16.1361H25.4964L25.1804 19.8137H21.8715V31H17.3328V19.8137H15V16.1361H17.3328V13.8613C17.3328 10.7453 18.814 9 22.5331 9C23.8252 9 24.7709 9.187 26 9.43633L25.4333 12.9578Z"
+                      fill="#F2F2F2"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="20" cy="20" r="20" fill="#7E8385" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M31.3005 12.3781C31.6996 12.7772 31.9872 13.2739 32.1346 13.8187C32.9835 17.2357 32.7873 22.6324 32.1511 26.1813C32.0037 26.7261 31.7161 27.2228 31.317 27.6219C30.9179 28.021 30.4212 28.3086 29.8764 28.456C27.8819 29 19.8544 29 19.8544 29C19.8544 29 11.8269 29 9.8324 28.456C9.28759 28.3086 8.79089 28.021 8.39179 27.6219C7.99269 27.2228 7.70511 26.7261 7.55768 26.1813C6.70383 22.7791 6.9379 17.3791 7.5412 13.8352C7.68862 13.2903 7.97621 12.7936 8.37531 12.3945C8.77441 11.9954 9.2711 11.7079 9.81592 11.5604C11.8104 11.0165 19.8379 11 19.8379 11C19.8379 11 27.8654 11 29.8599 11.544C30.4047 11.6914 30.9014 11.979 31.3005 12.3781ZM23.9423 20L17.283 23.8571V16.1428L23.9423 20Z"
+                      fill="#F2F2F2"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="20" cy="20" r="20" fill="#7E8385" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.7748 10.3035C14.7748 11.5593 13.8267 12.5756 12.3442 12.5756C10.9194 12.5756 9.97132 11.5593 10.0007 10.3035C9.97132 8.98669 10.9193 8 12.3726 8C13.8267 8 14.7463 8.98669 14.7748 10.3035ZM10.1199 28.9981V14.3705H14.6271V28.9971L10.1199 28.9981Z"
+                      fill="#F2F2F2"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.2398 19.0387C18.2398 17.2142 18.1802 15.6588 18.1206 14.3725H22.0356L22.2437 16.3764H22.3326C22.9258 15.4489 24.4084 14.0442 26.8106 14.0442C29.7757 14.0442 32 16.0185 32 20.3241V29H27.4927V20.8937C27.4927 19.0082 26.8408 17.7228 25.2097 17.7228C23.9637 17.7228 23.2229 18.5902 22.9268 19.4271C22.8076 19.7267 22.7489 20.1447 22.7489 20.5645V29H18.2416V19.0387H18.2398Z"
+                      fill="#F2F2F2"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item footer-menu__item_title">Общее</li>
+              <li class="footer-menu__item">
+                <a href="">Политика конфиденциальности</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="">Пользовательское соглашение</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="">Сроки и условия</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <hr class="footer__separator" />
       <div class="container">
         <div class="wrapper">
           <div class="copyright">© 2021, «Собергер». Все права защищены.</div>
-          <div class="development">
-            <p>Разработка - <a href="">Picom</a></p>
-          </div>
+          <div class="development">Разработка - <a href="">Picom</a></div>
         </div>
       </div>
     </footer>
+    <div class="widgets">
+      <a class="widget phone">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.9333 9.50375C12.0222 9.50375 11.1407 9.3556 10.3185 9.08893C10.0592 9.00004 9.77035 9.06671 9.57035 9.26671L8.40739 10.726C6.31109 9.72597 4.34813 7.83708 3.30368 5.66671L4.74813 4.43708C4.94813 4.22967 5.00739 3.94078 4.92591 3.68152C4.65183 2.8593 4.51109 1.97782 4.51109 1.06671C4.51109 0.666707 4.17776 0.333374 3.77776 0.333374H1.21479C0.814795 0.333374 0.333313 0.511152 0.333313 1.06671C0.333313 7.94819 6.05924 13.6667 12.9333 13.6667C13.4592 13.6667 13.6666 13.2 13.6666 12.7926V10.2371C13.6666 9.83708 13.3333 9.50375 12.9333 9.50375Z" fill="#DBDBDB"/>
+          </svg>
+      </a>
+      <a class="widget email">
+        <svg width="20" height="15" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.4 0.333374H1.6C0.72 0.333374 0.00799999 1.00004 0.00799999 1.81486L0 10.1852C0 11 0.72 11.6667 1.6 11.6667H14.4C15.28 11.6667 16 11 16 10.1852V1.81486C16 1.00004 15.28 0.333374 14.4 0.333374ZM14.4 3.29634L8 7.00004L1.6 3.29634V1.81486L8 5.51856L14.4 1.81486V3.29634Z" fill="#DBDBDB"/>
+          </svg>
+          
+      </a>
+    </div>
+    <script src="/js/script.js"></script>
   </body>
 </html>

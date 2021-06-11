@@ -1,0 +1,10 @@
+.mkc_circle { 
+    animation: mck_progress 1000ms ease-in-out; 
+}
+@keyframes mck_progress { 
+    0% { stroke-dasharray: 0, 100; }
+}
+
+.mkc_info {
+    fill: #fff;
+}

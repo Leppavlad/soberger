@@ -1,0 +1,23 @@
+.widgets {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+
+  .widget {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .phone {
+    background-color: $main-orange;
+  }
+
+  .email {
+    background-color: #191919;
+  }
+}

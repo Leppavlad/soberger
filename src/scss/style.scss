@@ -8,26 +8,34 @@
 html {
   font-family: Roboto, sans-serif;
   font-size: 18px;
+  line-height: 32px;
   color: $text-black;
 }
 body {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 1500px;
+  max-width: 1540px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 section .title {
+  margin: 0;
   font-size: 48px;
+  line-height: 56px;
   font-weight: 700;
   max-width: 860px;
 }
 
+@import "assets/mk_charts.css";
+@import "components/btn";
 @import "components/header";
 @import "components/header-slider";
 @import "components/collections";
 @import "components/contact-us";
 @import "components/footer";
+@import "components/widgets";

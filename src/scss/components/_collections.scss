@@ -1,4 +1,104 @@
 .collections {
-  padding-top: 40px;
-  padding-bottom: 47px;
+  padding-top: 37px;
+  padding-bottom: 35px;
+
+  .breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &+.title {
+      margin-top: 17px;
+    }
+
+    &__item {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
+      a {
+        text-decoration: none;
+        color: $text-black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .paragraph {
+    margin-top: 34px;
+    max-width: 860px;
+    line-height: 32px;
+  }
+
+  .content {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+}
+
+.collections__popular {
+  margin-top: 80px;
+  .content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .popular__item {
+    flex: 0 1 345px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.collections__season {
+  margin-top: 112px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    &__description {
+      flex: 0 1 475px;
+
+      .text {
+        margin: 52px 0 0;
+      }
+    }
+    &__img {
+      margin-left: 20px;
+      flex: 0 2 860px;
+
+      img {
+        width: 100%;
+      }
+    } 
+
+    &__controllers {
+      display: flex;
+      margin-top: 70px;
+
+      .btn {
+        width: 64px;
+        margin: 1px;
+      }
+    }
+  }
+
+  & .subtitle {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: $main-orange;
+  }
 }

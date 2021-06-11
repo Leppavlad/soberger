@@ -1,0 +1,42 @@
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &_flat {
+    height: fit-content;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    color: $main-orange;
+
+    &:focus,
+    &:hover {
+      color: $main-orange-alt;
+      text-decoration: underline;
+    }
+  }
+
+  &_square {
+    display: grid;
+    place-items: center;
+    border: none;
+    height: 64px;
+    border-radius: 4px;
+    color: #fff;
+    
+    background-color: $main-orange;
+    transition: background .1s;
+
+    
+    &:focus,
+    &:hover {
+      background-color: $main-orange-alt;
+      transition: background .1s;
+    }
+  }
+
+  &_shevron {
+    width: 64px;
+  }
+}
